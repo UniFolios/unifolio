@@ -2,10 +2,11 @@ import Link from "next/link";
 import IconSmiley from "./icons/smiley";
 import SectionTitle from "./ui/section-title";
 import IconExternalLink from "./icons/external-link";
+import Section from "./ui/section";
 
 const About = () => {
     return (
-        <>
+        <Section>
             <SectionTitle title="Meet With" icon={<IconSmiley />} />
             <div className="flex flex-col md:flex-row items-stretch justify-center gap-8 px-4 md:px-8 py-6">
                 <div className="bg-gray-350 shadow-md rounded-md flex-1 p-8">
@@ -52,7 +53,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </Section>
     );
 };
 
