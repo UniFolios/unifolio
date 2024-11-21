@@ -7,15 +7,23 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navigation = [
-        "Home",
-        "About Me",
-        "Projects",
-        "Testimonials",
-        "Contact",
+        { name: "Home", id: "home" },
+        { name: "About Me", id: "about-me" },
+        { name: "Projects", id: "projects" },
+        { name: "Testimonials", id: "testimonials" },
+        { name: "Contact", id: "contact" },
     ];
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const handleScroll = (id: string) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+            setIsMenuOpen(false); // Close menu on navigation (for mobile)
+        }
     };
 
     return (
@@ -40,9 +48,10 @@ const Navbar = () => {
                 {navigation.map((nav, index) => (
                     <li
                         key={index}
-                        className="text-lg text-center lg:text-left hover:text-blue-600"
+                        className="text-lg text-center lg:text-left hover:text-blue-600 cursor-pointer"
+                        onClick={() => handleScroll(nav.id)}
                     >
-                        {nav}
+                        {nav.name}
                     </li>
                 ))}
             </ul>

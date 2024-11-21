@@ -6,7 +6,7 @@ import SectionTitle from "./ui/section-title";
 
 const Projects = () => {
     return (
-        <Section>
+        <Section id='projects'>
             <SectionTitle title="Handpicked Projects" icon={<IconHandPicked />} />
             <div className="flex flex-col md:flex-row items-stretch justify-center gap-8 px-4 md:px-8 py-6">
                 <div className="flex flex-col">

@@ -2,7 +2,7 @@ import Section from "./ui/section";
 
 const Banner = () => {
     return (
-        <Section>
+        <Section id="home">
             <div className="w-full flex justify-end relative">
                 <div className="absolute top-48 left-0">
                     <h1 className="text-8xl">Hugo Stiglitz</h1>

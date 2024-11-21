@@ -13,7 +13,7 @@ import {
 
 const Testimonial = () => {
     return (
-        <Section>
+        <Section id="testimonials">
             <SectionTitle title="Lucky encounters" icon={<IconChat />} />
 
             <Carousel>
