@@ -76,3 +76,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+/* Custom */
+.font-italiana {
+  font-family: var(--font-italiana);
+}
