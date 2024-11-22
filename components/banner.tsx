@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="w-full flex flex-col lg:flex-row justify-end relative">
                 {/* Left Side: Name and Title */}
                 <div className="absolute top-20 left-6 lg:top-60 lg:left-10 z-40">
-                    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold leading-tight">
+                    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold leading-tight font-italiana">
                         Hugo Stiglitz
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl mt-4 lg:mt-8 text-gray-600">
