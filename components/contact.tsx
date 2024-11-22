@@ -10,12 +10,12 @@ import Section from "./ui/section";
 import SectionTitle from "./ui/section-title";
 
 const Contact = () => {
-    const [tooltip, setTooltip] = useState(null); // Track the active tooltip
+    const [tooltip, setTooltip] = useState(1000); // Track the active tooltip
 
-    const handleCopy = (text: string, index: any) => {
+    const handleCopy = (text: string, index: number) => {
         navigator.clipboard.writeText(text);
         setTooltip(index);
-        setTimeout(() => setTooltip(null), 2000); // Reset tooltip after 2 seconds
+        setTimeout(() => setTooltip(1000), 2000); // Reset tooltip after 2 seconds
     };
 
     const links = [
