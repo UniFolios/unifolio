@@ -1,8 +1,8 @@
 import Link from "next/link";
-import IconSmiley from "./icons/smiley";
-import SectionTitle from "./ui/section-title";
 import IconExternalLink from "./icons/external-link";
+import IconSmiley from "./icons/smiley";
 import Section from "./ui/section";
+import SectionTitle from "./ui/section-title";
 
 const About = () => {
     return (
