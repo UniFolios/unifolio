@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
+
 import IconHandPicked from "./icons/handpicked";
 import Section from "./ui/section";
 import SectionTitle from "./ui/section-title";
@@ -37,54 +41,56 @@ const Projects = () => {
     return (
         <Section id="projects">
             <SectionTitle title="Handpicked Projects" icon={<IconHandPicked />} />
-            <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-8 px-4 md:px-8 py-6">
-                {projects.map((project, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col w-full sm:w-[85%] md:w-[48%] lg:w-[30%]"
-                    >
-                        <div className="flex flex-col">
-                            <Image
-                                src={project.image}
-                                width={500}
-                                height={500}
-                                alt={project.title}
-                                className="rounded-lg object-cover"
-                            />
-                            <h2 className="text-lg sm:text-xl font-medium underline py-4">
-                                {project.title}
-                            </h2>
-                            <p className="text-sm sm:text-base">{project.description}</p>
+            <Fade direction="up" duration={1200} triggerOnce>
+                <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-8 px-4 md:px-8 py-6">
+                    {projects.map((project, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col w-full sm:w-[85%] md:w-[48%] lg:w-[30%]"
+                        >
+                            <div className="flex flex-col">
+                                <Image
+                                    src={project.image}
+                                    width={500}
+                                    height={500}
+                                    alt={project.title}
+                                    className="rounded-lg object-cover"
+                                />
+                                <h2 className="text-lg sm:text-xl font-medium underline py-4">
+                                    {project.title}
+                                </h2>
+                                <p className="text-sm sm:text-base">{project.description}</p>
+                            </div>
+                            <div className="flex justify-between gap-4">
+                                <Link
+                                    href={project.liveLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <div className="flex gap-x-2 justify-center lg:justify-start items-center pt-8">
+                                        <h3 className="text-sm sm:text-base font-normal cursor-pointer">
+                                            Live
+                                        </h3>
+                                        <IconExternalLink />
+                                    </div>
+                                </Link>
+                                <Link
+                                    href={project.githubLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <div className="flex gap-x-2 justify-center lg:justify-start items-center pt-8">
+                                        <h3 className="text-sm sm:text-base font-normal cursor-pointer">
+                                            Github
+                                        </h3>
+                                        <IconExternalLink />
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
-                        <div className="flex justify-between gap-4">
-                            <Link
-                                href={project.liveLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div className="flex gap-x-2 justify-center lg:justify-start items-center pt-8">
-                                    <h3 className="text-sm sm:text-base font-normal cursor-pointer">
-                                        Live
-                                    </h3>
-                                    <IconExternalLink />
-                                </div>
-                            </Link>
-                            <Link
-                                href={project.githubLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div className="flex gap-x-2 justify-center lg:justify-start items-center pt-8">
-                                    <h3 className="text-sm sm:text-base font-normal cursor-pointer">
-                                        Github
-                                    </h3>
-                                    <IconExternalLink />
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </Fade>
         </Section>
     );
 };
