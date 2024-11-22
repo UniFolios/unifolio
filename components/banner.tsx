@@ -1,6 +1,6 @@
 "use client";
 
-import { Fade, Zoom, AttentionSeeker } from "react-awesome-reveal";
+import { Fade, AttentionSeeker } from "react-awesome-reveal";
 import Section from "./ui/section";
 import Image from "next/image";
 
