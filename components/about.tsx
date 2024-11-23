@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+
 import { EmblaOptionsType } from "embla-carousel";
 import { Fade } from "react-awesome-reveal";
 
