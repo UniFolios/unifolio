@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
   	extend: {
+		screens: {
+			// Max-width breakpoints
+			xsm: { max: "639px" }, 
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
