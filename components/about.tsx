@@ -7,7 +7,6 @@ import { EmblaOptionsType } from "embla-carousel";
 import { Fade } from "react-awesome-reveal";
 
 import IconSmiley from "./icons/smiley";
-import IconLinkedIn from "./icons/linkedin"; // Example icon
 import SectionTitle from "./ui/section-title";
 import Section from "./ui/section";
 import SkillCarousel from "./ui/skill-carousel";
