@@ -27,7 +27,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed backdrop-blur-md  py-7 px-16 top-0 left-0 right-0 max-w-[1280px] mx-auto z-50 flex items-center justify-between">
+        <nav className="fixed backdrop-blur-md  py-7 px-[60px] top-0 left-0 right-0 max-w-[1280px] mx-auto z-50 flex items-center justify-between">
             {/* Navigation Links */}
             <ul
                 className={`lg:flex flex-col lg:flex-row lg:static absolute left-0 top-0 w-full lg:w-auto p-6 lg:p-0 gap-[64px] transition-all duration-300 ${
