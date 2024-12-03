@@ -9,12 +9,15 @@ import Container from "../components/ui/container";
 export default function Home() {
   return (
     <Container>
+      <div className="flex flex-col items-center gap-[144px] mx-auto">
       <Navbar />
       <Banner />
       <About />
       <Projects />
       <Testimonial />
       <Contact />
+      </div>
+
     </Container>
   );
 }

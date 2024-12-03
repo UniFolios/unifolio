@@ -38,9 +38,16 @@ const SkillCarousel: React.FC<PropType> = ({ slides, options }) => {
   }, [emblaApi]);
 
   return (
-    <div className="embla_skill_slider w-full lg:w-72">
+    <div className="embla_skill_slider 
+    xl:w-[450px] 
+    lg:w-[300px]
+    md:w-[500px] 
+    sm:w-[300px]
+    xsm:w-[270px]
+
+    ">
       <div className="embla_skill_slider__viewport" ref={emblaRef}>
-        <div className="embla_skill_slider__container">
+        <div className="embla_skill_slider__container ">
           {slides.map((slide, index) => (
             <div className="embla_skill_slider__slide" key={index}>
               {slide}
