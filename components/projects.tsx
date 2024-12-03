@@ -8,9 +8,8 @@ import IconHandPicked from "./icons/handpicked";
 import Section from "./ui/section";
 import SectionTitle from "./ui/section-title";
 import IconExternalLink from "./icons/external-link";
-import { Fullscreen } from "lucide-react";
 
-// Array to store project details
+
 const projects = [
     {
         title: "E-commerce Platform",

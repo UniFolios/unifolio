@@ -18,7 +18,7 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const handleScroll = (id: string) => {
+    const handleScroll = (id) => {
         const section = document.getElementById(id);
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
@@ -27,19 +27,19 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed backdrop-blur-md  py-7 px-[60px] top-0 left-0 right-0 max-w-[1280px] mx-auto z-50 flex items-center justify-between">
+        <nav className="fixed backdrop-blur-md py-7 px-[60px] top-0 left-0 right-0 max-w-[1280px] mx-auto z-50 flex items-center justify-between xsm:backdrop-blur-none">
             {/* Navigation Links */}
             <ul
-                className={`lg:flex flex-col lg:flex-row lg:static absolute left-0 top-0 w-full lg:w-auto p-6 lg:p-0 gap-[64px] transition-all duration-300 ${
+                className={`sm:flex flex-col sm:flex-row sm:static absolute left-0 top-0 w-full sm:w-auto p-6 sm:p-0 gap-[64px] transition-all duration-300 ${
                     isMenuOpen
-                        ? "translate-y-0 opacity-100 z-40"
-                        : "-translate-y-full opacity-0 lg:opacity-100 lg:translate-y-0"
+                        ? "translate-y-0 opacity-100 z-40 w-full h-screen  flex items-center justify-center backdrop-blur-lg bg-white-50"
+                        : "-translate-y-full opacity-0 sm:opacity-100 sm:translate-y-0"
                 }`}
             >
                 {navigation.map((nav, index) => (
                     <li
                         key={index}
-                        className="relative text-stone-600 text-sm cursor-pointer "
+                        className="relative text-stone-600 text-sm cursor-pointer"
                         onClick={() => handleScroll(nav.id)}
                     >
                         <span
@@ -53,17 +53,14 @@ const Navbar = () => {
 
             {/* Burger / Close Icon for Mobile */}
             <button
-                className="lg:hidden text-2xl focus:outline-none z-50"
+                className="block sm:hidden text-2xl focus:outline-none z-50 "
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
             >
                 {isMenuOpen ? "×" : "☰"} {/* Cross (×) for close, Hamburger (☰) for open */}
             </button>
 
-            {/* Theme Icon */}
-            <div className="hidden lg:block text-2xl">
-                <IconThemeLight />
-            </div>
+            
         </nav>
     );
 };
