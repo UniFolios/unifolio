@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import IconThemeLight from "./icons/theme-light";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +17,7 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const handleScroll = (id) => {
+    const handleScroll = (id:string) => {
         const section = document.getElementById(id);
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
