@@ -9,7 +9,6 @@ import Section from "./ui/section";
 import SectionTitle from "./ui/section-title";
 import IconExternalLink from "./icons/external-link";
 
-
 const projects = [
     {
         title: "E-commerce Platform",
@@ -107,11 +106,16 @@ const Projects = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <div className="flex gap-x-2 justify-center lg:justify-start items-center">
-                                        <h3 className="text-sm sm:text-base font-normal cursor-pointer">
-                                            Live
+                                    <div className="flex gap-x-2 justify-center lg:justify-start items-center group cursor-pointer">
+                                        <h3 className="text-sm sm:text-base font-normal relative overflow-hidden">
+                                            <span className="relative overflow-hidden">
+                                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-slate-900 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                                                Live
+                                            </span>
                                         </h3>
-                                        <IconExternalLink />
+                                        <div className="transition-transform duration-300 transform group-hover:rotate-180">
+                                            <IconExternalLink />
+                                        </div>
                                     </div>
                                 </Link>
                                 <Link
@@ -119,11 +123,16 @@ const Projects = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <div className="flex gap-x-2 justify-center lg:justify-start items-center ">
-                                        <h3 className="text-sm sm:text-base font-normal cursor-pointer">
-                                            Github
+                                    <div className="flex gap-x-2 justify-center lg:justify-start items-center group cursor-pointer">
+                                        <h3 className="text-sm sm:text-base font-normal relative overflow-hidden">
+                                            <span className="relative overflow-hidden">
+                                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-slate-900 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                                                Github
+                                            </span>
                                         </h3>
-                                        <IconExternalLink />
+                                        <div className="transition-transform duration-300 transform group-hover:rotate-180">
+                                            <IconExternalLink />
+                                        </div>
                                     </div>
                                 </Link>
                             </div>
