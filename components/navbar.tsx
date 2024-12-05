@@ -31,7 +31,7 @@ const Navbar = () => {
             <ul
                 className={`sm:flex flex-col sm:flex-row sm:static absolute left-0 top-0 w-full sm:w-auto p-6 sm:p-0 gap-[64px] transition-all duration-300 ${
                     isMenuOpen
-                        ? "translate-y-0 opacity-100 z-40 w-full h-screen  flex items-center justify-center backdrop-blur-lg bg-white-50"
+                        ? "translate-y-0 opacity-100 z-40 w-full h-screen  flex items-center justify-center backdrop-blur-lg bg-white/70"
                         : "-translate-y-full opacity-0 sm:opacity-100 sm:translate-y-0"
                 }`}
             >
