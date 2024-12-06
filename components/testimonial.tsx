@@ -6,27 +6,28 @@ import TestimonialCarousel from "./ui/testimonial-carousel";
 const Testimonial = () => {
   const testimonials = [
     {
-      avatar: "/img/testimonial-1.png",
+      avatar: "/img/1.webp",
       name: "Hans Landa",
       role: "Product Manager at Technocorp",
       testimonial:
-        "Jon consistently went above and beyond to ensure project success. His innovative ideas and attention to detail were invaluable to our team.",
+        "Hugo consistently went above and beyond to ensure project success. His innovative ideas and attention to detail were invaluable to our team.",
       linkedinUrl: "https://linkedin.com/in/hanslanda",
     },
     {
-      avatar: "/img/testimonial-1.png",
-      name: "Jane Doe",
-      role: "Software Engineer at Innovatech",
+      avatar: "/img/2.webp",
+      name: "Shosanna Dreyfus",
+      role: "Lecturer at OAMK",
       testimonial:
-        "Working with Jon was a pleasure. His technical skills and team-first attitude made him a standout contributor.",
+        "Hugo is one of the most dedicated developers I’ve had the pleasure to teach. He truly stands out in any team with his communication and understanding skills.",
       linkedinUrl: "https://linkedin.com/in/janedoe",
     },
     {
-      avatar: "/img/testimonial-1.png",
-      name: "Mark Smith",
-      role: "CTO at TechVision",
+      avatar: "/img/3.webp",
+      name: "Dominic De Coco",
+      role: "Senior Developer at Technocorp",
       testimonial:
-        "Jon's ability to problem-solve and deliver under tight deadlines was remarkable. Highly recommend!",
+        "Hugo's ability to problem-solve and deliver under tight deadlines was remarkable. Even though there was hard time constraints he delivered everything.",
+      linkedinUrl: "https://linkedin.com/in/janedoe",
     },
   ];
 
