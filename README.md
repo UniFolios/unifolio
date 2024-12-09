@@ -50,6 +50,10 @@ There are five sections and there will be specific instructions to modify each o
 
 All color codes ready for you, just type the name of the color and token code that you want and you are good to go. As an example "slate-50" would give us the color #f8fafc
 
+In tailwind we declare the css with assigning a classname to element as below
+![alt text](image-13.png)
+If we would add "background-slate-50" syntax on this element it would have slate 50 color bg.
+
 <br>
 
 ![alt text](sc-7.png)
@@ -116,27 +120,108 @@ This one is our main page which renders everything. As you can see it includes e
 
 If you just "ctrl + left mouse click (WINDOWS) " or " cmd + left mouse click (MAC)" you will see the code of that component. This is the easiest way to move between components.
 
+<br>
+<br>
+
+## Section Specific Instructions &nbsp;  🌄
+
+<br>
+
+# Landing 🏠
+
+Enter to components folder and find banner.tsx -->
+<br>
+
+![alt text](image.png)
+
+Top 2 lines indicate the css settings that are valid for all screen sizes. The other lines are very specific for different screen sizes.
+
+![alt text](image-1.png)
+
+Hover your mouse to see css settings of the elements as below (if not working download the tailwind extension for vscode);
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+- To change your name and title find the element below:
+
+![alt text](image-5.png)
+
+- To change your profile picture we will work together step by step:
+
+If you have a cool png(a photo without background, in other words only you) profile pic just proceed to step 3 if not just follow the steps.
+
+1- You need an img with a simple bg color as less color as simple it will ne to turn your jpeg, jpg, etc. formatted photo to png. You can simply get a selfie in front a wall.
+
+2- Once your photo is ready, hit the link and access adobe free bg remover -->
+https://www.adobe.com/express/feature/image/remove-background
+
+<br>
+
+Upload your photo
+
+![alt text](image-6.png)
+
+<br>
+
+See this screen
+
+![alt text](image-8.png)
+
+And hit download
+
+Congrulations your png profile picture is ready 🎉
+
+![alt text](image-9.png)
+
+<br>
+
+3- Now place your img inside the file named public
+
+![alt text](image-10.png)
+
+4- Copy the name of this file and delete it 
+
+![alt text](image-11.png)
+
+Now change name of your own profile picture with name that you just copied. You should be seeing it on the http://localhost:3000/, well done 👏🏻
+
+Now inspect the page and check how responsive the photo is. If not, play with the numbers below. 
+
+From the Image element under the breakpoint settings you can adjust the photo size also. If you want to use your photo name with other than profile-pic.png be sure that you adjust the src of img element accordingly. 
+
+From the last line you can also declare very specific css settings directly for the photo.
+
+![alt text](image-12.png)
+
+<br>
+
+- Now lets add your CV to the button.
+
+If you are not sure about your CV follow the link. Harvard format is one of the most preffered by recruiters as it is very simple to consider -->
+
+https://careerservices.fas.harvard.edu/resources/bullet-point-resume-template/
+
+If you want more authentic options, I recommend you to check the free CV templates of vecteezy -->
+
+https://www.vecteezy.com/free-vector/cv?license-free=true
+
+Once your CV is ready, add it to public folder and find the element below in banner.tsx :
+![alt text](image-14.png)
+
+Adjust href according to your resume name 
+![alt text](image-15.png)
+
+Congrulations your cv is ready to download, do not forget to check 😉
+
+# 🎊 YOUR OWN LANDING IS READY 🎊
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Technologies
+<!-- ## Technologies
 
 - [Next.js](https://nextjs.org)
 - [React](https://reactjs.org)
@@ -147,4 +232,4 @@ If you just "ctrl + left mouse click (WINDOWS) " or " cmd + left mouse click (MA
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. -->
