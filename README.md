@@ -528,7 +528,7 @@ For the copy you can adjust this one;
 
 If everything is ready;
 
-# 🎊 AMAZING, YOU READY TO DEPLOY 🎊
+# 🎊 AMAZING, YOU ARE READY TO DEPLOY 🎊
 
 
 <br>
