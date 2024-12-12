@@ -34,7 +34,7 @@ const Contact = () => {
         {
             title: "Portfolio",
             url: "https://yourportfolio.com", // Replace with your portfolio URL
-            icon: <IconLinkedIn2 />, // Keep the LinkedIn or replace with another relevant icon
+            icon: <IconLinkedIn2 />, // LinkedIn icon
         },
     ];
 
