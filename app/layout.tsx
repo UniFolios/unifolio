@@ -18,8 +18,8 @@ const italiana = Italiana({
 });
 
 export const metadata: Metadata = {
-  title: "Unifolio - A portfolio template for students",
-  description: "Unifolio is a portfolio template for developers.",
+  title: "Hugo Stiglitz - Unifolio Template",
+  description: "Unifolio is a portfolio template for students. It is built with Next.js and Tailwind CSS.",
 };
 
 export default function RootLayout({
