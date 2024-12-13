@@ -6,8 +6,23 @@
 ⭐️   https://unifolio-delta.vercel.app/  ⭐️
 ##
 
-<br>
-<br>
+
+### Table of Contents 📚
+
+- [Getting Started](#getting-started--%EF%B8%8F)
+- [How to use this documentation](#how-to-use-this-documentation-%EF%B8%8F)
+- [Section Specific Instructions](#section-specific-instructions-%EF%B8%8F)
+  - [Landing](#landing-)
+  - [About](#about-)
+  - [Projects](#projects-)
+  - [Testimonials](#testimonials-)
+  - [Contact](#contact-)
+- [How deployment works](#how-it-works-%EF%B8%8F)
+- [How to Deploy Next.js App with Vercel](#how-to-deploy-nextjs-app-with-vercel)
+- [Contributors](#contributors-)
+- [How to Contribute](#how-to-contribute-%EF%B8%8F)
+- [Conclusion](#conclusion-)
+
 
 ## Getting Started &nbsp;  ⚙️
 
@@ -530,21 +545,56 @@ If everything is ready;
 
 # 🎊 AMAZING, YOU ARE READY TO DEPLOY 🎊
 
-
-
-
-
-
-
-<!-- ## Technologies
-
-- [Next.js](https://nextjs.org)
-- [React](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org)
-
-
-## Deployment
-
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. -->
+Check out [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# How it works 🛠️
+
+![alt text](public/readme-img/01_deploy_overview.webp)
+
+# How to Deploy Next.js App with Vercel?
+
+The deployment process is relatively straightforward, and we will allow Vercel to have permission over our application that’s going to be deployed.
+
+## Follow these steps:
+
+1. Make sure to put your code into the repository.
+2. Create an account in [Vercel](https://vercel.com/signup).
+3. Open your profile’s dashboard page in Vercel. It will show your projects (if any). On this page, click on Create a New Project.
+
+![alt text](public/readme-img/02_deploy_steps.webp)
+
+5. On this page, we need to import your Git Repository first. Just follow the simple steps that they provide. After it’s connected to our repository, choose the project we want to deploy. We will need to sign in to our repository and allow the required access to enable Vercel to read our project in our repository.
+
+![alt text](public/readme-img/03_deploy_steps.webp)
+
+6. After successfully importing our project from our repository, you will be redirected to this page. Here, we can click on the Deploy button to deploy our application. For now, leave the rest to default. We can check our deployment process at the bottom of the page later. If any errors are found, we can see the cause. The error message that Vercel provides is easy to understand.
+
+![alt text](public/readme-img/04_deploy_steps.webp)
+
+7. Your code should be successfully deployed after a few minutes and will be redirected to this page. To see/access our deployed application, click Go to Dashboard to find the deployment link.
+
+![alt text](public/readme-img/05_deploy_steps.webp)
+
+If the deployment fails, you can check the error on the build output from the previous image.
+
+# Contributors 🌟
+
+- [Hakan Asmaoğlu](https://github.com/Hakan-Asmaoglu)
+- [Shovan Das](https://github.com/shovoncse)
+
+# How to Contribute 🤝
+
+1. Fork the repository
+2. Clone the repository
+3. Create a new branch
+4. Make necessary changes and commit those changes
+5. Push changes to GitHub
+6. Submit your changes for review
+
+# Conclusion 🎉
+
+We hope this documentation has been helpful in guiding you through the process of setting up and customizing your Unifolio portfolio. If you have any questions or run into any issues, please feel free to reach out to the contributors or open an issue on GitHub. Happy coding and best of luck with your portfolio!
+
+Thank you for using Unifolio! 🚀
